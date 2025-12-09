@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #d02929;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atmsimulation.controller.MainScreenController">
+   <children>
+      <Label layoutX="38.0" layoutY="32.0" text="Hoş geldin" textFill="WHITE" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="149.0" layoutY="39.0" textFill="WHITE" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="69.0" text="Kullanılan hesap" textFill="WHITE" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="67.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAccounId" layoutX="153.0" layoutY="71.0" textFill="WHITE" AnchorPane.topAnchor="67.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="107.0" text="Bakiye:" textFill="WHITE" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="97.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBalance" layoutX="96.0" layoutY="101.0" textFill="WHITE" AnchorPane.topAnchor="97.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
