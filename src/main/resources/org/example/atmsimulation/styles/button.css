@@ -1,0 +1,38 @@
+.button-style1 {
+    -fx-background-color: e8e3e3;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+}
+.button-style1:hover,
+.button-style1:focus{
+    -fx-background-color: rgba(255,255,255, 0.95);
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+}
+.button-style2 {
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+.button-style2:hover,
+.button-style2:focus{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 0);
+    -fx-border-width: 3;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+
+.button-style3 {
+    -fx-background-color: rgba(255,255,255,0.35);
+    -fx-border-color: rgba(255,255,255,0.8);
+    -fx-text-fill: rgba(255,255,255,0.8);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.button-style3:disabled {
+    -fx-background-color: rgba(255,255,255,0.25);
+    -fx-border-color: rgba(255,255,255,0.5);
+    -fx-text-fill: rgba(255,255,255,0.4);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}

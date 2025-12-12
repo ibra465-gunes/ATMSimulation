@@ -22,3 +22,24 @@
     -fx-border-color: transparent transparent #FF8C00 transparent;
     -fx-border-width: 0 0 2 0;
 }
+.text-field-style2 {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+.text-field-style2:hover,
+.text-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.015);
+    -fx-border-color: white;
+    -fx-border-width: 2.5;
+}
+.text-field-style2{
+    -fx-text-fill: white;
+}
+.button {
+    -fx-background-color: white;
+        -fx-border-radius: 10;
+        -fx-background-radius: 10;
+}

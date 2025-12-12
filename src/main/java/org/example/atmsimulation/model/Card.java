@@ -36,4 +36,8 @@ public class Card {
     public String getAccountId() {
         return accountId;
     }
+
+    public String getPassword() {
+        return password;
+    }
 }

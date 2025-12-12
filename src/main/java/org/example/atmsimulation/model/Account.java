@@ -1,5 +1,7 @@
 package org.example.atmsimulation.model;
 
+import java.time.YearMonth;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Account {
@@ -7,12 +9,13 @@ public class Account {
     private String name;
     private String Surname;
     private double balance;
-    private List<Card> cardIds;
+    private List<Card> card;
 
     public Account(String accountId, String name, String surname) {
         this.accountId = accountId;
         this.name = name;
         Surname = surname;
+        this.card = new ArrayList<>();
         this.balance = 0.0;
     }
 
@@ -20,8 +23,8 @@ public class Account {
         this.balance = balance;
     }
 
-    public void setCardIds(List<Card> cardIds) {
-        this.cardIds = cardIds;
+    public void setCardIds(String cardId, String password, int ccv, YearMonth expiryDate, String accountId) {
+        card.add(new Card(cardId, password, ccv, expiryDate, accountId));
     }
 
     public String getAccountId() {
@@ -40,7 +43,7 @@ public class Account {
         return balance;
     }
 
-    public List<Card> getCardIds() {
-        return cardIds;
+    public List<Card> getCard() {
+        return card;
     }
 }

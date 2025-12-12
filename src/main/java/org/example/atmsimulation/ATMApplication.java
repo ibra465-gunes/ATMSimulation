@@ -14,7 +14,7 @@ public class ATMApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(ATMApplication.class.getResource("Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 550, 420);
         stage.setTitle("ATM");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("images/atm.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("icons/atm.png")));
         stage.setScene(scene);
         stage.show();
     }
