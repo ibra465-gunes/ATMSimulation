@@ -3,6 +3,9 @@ module org.example.atmsimulation {
     requires javafx.fxml;
 
     requires javafx.graphics;
+    requires org.controlsfx.controls;
+    requires javafx.base;
+
 
 
     opens org.example.atmsimulation to javafx.fxml;

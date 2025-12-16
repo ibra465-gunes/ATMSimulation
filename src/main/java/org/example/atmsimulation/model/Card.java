@@ -8,13 +8,19 @@ public class Card {
     private int ccv;
     private YearMonth expiryDate;
     private String accountId;
+    private String cardType;
 
-    public Card(String cardId, String password, int ccv, YearMonth expiryDate, String accountId) {
+    public Card(String cardId, String password, int ccv, YearMonth expiryDate, String accountId, String cardType) {
         this.cardId = cardId;
         this.password = password;
         this.ccv = ccv;
         this.expiryDate = expiryDate;
         this.accountId = accountId;
+        this.cardType = cardType;
+    }
+
+    public String getCardType() {
+        return cardType;
     }
 
     public String getCardId() {

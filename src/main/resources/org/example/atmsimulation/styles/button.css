@@ -36,3 +36,18 @@
     -fx-border-radius: 20;
     -fx-background-radius: 20;
 }
+.button-style4 {
+    -fx-background-color: rgba(255,255,255,0.35);
+    -fx-border-color: rgba(255,255,255,0.8);
+    -fx-text-fill: rgba(255,255,255,0.8);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.button-style4:disabled {
+    -fx-background-color: rgba(255,255,255,0.25);
+    -fx-border-color: rgba(255,255,255,0.5);
+    -fx-text-fill: rgba(255,255,255,0.4);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}

@@ -40,29 +40,29 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="txtEntryAmount" layoutX="38.0" layoutY="220.0" prefHeight="50.0" prefWidth="301.0" styleClass="text-field-style2" stylesheets="@styles/txtFieldBorder.css" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="561.0">
+      <TextField fx:id="txtEntryAmount" layoutX="38.0" layoutY="220.0" prefHeight="50.0" prefWidth="301.0" styleClass="text-field-style2" stylesheets="@styles/txtFieldBorder.css" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="220.0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </TextField>
-      <Label layoutX="304.0" layoutY="230.0" text="TL" textFill="WHITE">
+      <Label layoutX="304.0" layoutY="230.0" text="TL" textFill="WHITE" AnchorPane.rightAnchor="574.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
       <AnchorPane layoutY="425.0" prefHeight="175.0" prefWidth="900.0" style="-fx-background-color: e1d6d6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <children>
-            <Button fx:id="btnAccount" alignment="BASELINE_RIGHT" ellipsisString="" graphicTextGap="5.0" layoutX="59.0" layoutY="38.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="button-style2" stylesheets="@styles/button.css" text="Hesaplar ve &#10;Kartlar" textFill="RED" AnchorPane.leftAnchor="75.0">
+            <Button fx:id="btnAccount" alignment="BASELINE_RIGHT" ellipsisString="" graphicTextGap="5.0" layoutX="59.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleAccountAndCards" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="button-style2" stylesheets="@styles/button.css" text="Hesaplar ve &#10;Kartlar" textFill="RED" AnchorPane.leftAnchor="75.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_RIGHT" layoutX="309.0" layoutY="38.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="button-style2" stylesheets="@styles/button.css" text="Para Yatırma" textFill="RED" AnchorPane.leftAnchor="350.0">
+            <Button fx:id="btnDepositScreen" alignment="BASELINE_RIGHT" layoutX="309.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleDepositScreen" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="button-style2" stylesheets="@styles/button.css" text="Para Yatırma" textFill="RED" AnchorPane.leftAnchor="350.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_RIGHT" layoutX="557.0" layoutY="38.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="button-style2" stylesheets="@styles/button.css" text="Transferler ve &#10;Ödemeler" textFill="RED" AnchorPane.leftAnchor="625.0" AnchorPane.rightAnchor="75.0">
+            <Button fx:id="btnTransaction" alignment="BASELINE_RIGHT" layoutX="557.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleTransaction" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="button-style2" stylesheets="@styles/button.css" text="Transferler ve &#10;Ödemeler" textFill="RED" AnchorPane.leftAnchor="625.0" AnchorPane.rightAnchor="75.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
@@ -89,27 +89,32 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="450.0" layoutY="133.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="50TL" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="133.0">
+      <Button fx:id="btnFifty" layoutX="450.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleWithdrawMoney1" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="50TL" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="133.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="656.0" layoutY="133.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="200TL" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="133.0">
+      <Button fx:id="btnTwoHunderd" layoutX="656.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleWithdrawMoney2" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="200TL" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="133.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="450.0" layoutY="245.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="500TL" AnchorPane.topAnchor="245.0">
+      <Button fx:id="btnFiveHundred" layoutX="450.0" layoutY="245.0" mnemonicParsing="false" onAction="#handleWithdrawMoney3" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="500TL" AnchorPane.topAnchor="245.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="682.0" layoutY="245.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="1000TL">
+      <Button fx:id="btnOneThousand" layoutX="682.0" layoutY="245.0" mnemonicParsing="false" onAction="#handleWithdrawMoney4" prefHeight="80.0" prefWidth="180.0" styleClass="button-style1" stylesheets="@styles/button.css" text="1000TL">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btnTakeMoney" layoutX="38.0" layoutY="285.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="301.0" styleClass="button-style3" stylesheets="@styles/button.css" text="Para çekmek istiyorum" textFill="#e1cdcd">
+      <Button fx:id="btnWithdrawMoney" layoutX="38.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleWithdrawMoney" prefHeight="50.0" prefWidth="301.0" styleClass="button-style3" stylesheets="@styles/button.css" text="Para çekmek istiyorum" textFill="#e1cdcd" AnchorPane.topAnchor="285.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLogout" layoutX="726.0" layoutY="42.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="41.0" prefWidth="93.0" style="-fx-background-color: white;" styleClass="button-style2" stylesheets="@styles/button.css" text="Çıkış">
          <font>
             <Font size="16.0" />
          </font>
