@@ -1,4 +1,4 @@
-
+[English Version](README.en.md)
 # 🏦 ATM Simulation (JavaFX)
 
 ATM Simulation, **Java 25** ve **JavaFX 24.0.1** kullanılarak geliştirilmiş bir ATM uygulamasıdır.  
