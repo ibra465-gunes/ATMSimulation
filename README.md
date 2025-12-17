@@ -1,4 +1,4 @@
-```markdown
+
 # 🏦 ATM Simulation (JavaFX)
 
 ATM Simulation, **Java 25** ve **JavaFX 24.0.1** kullanılarak geliştirilmiş bir ATM uygulamasıdır.  
@@ -128,7 +128,7 @@ ATMSimulation/
 ![Accounts and Cards](src/main/resources/org/example/atmsimulation/screenshots/accountsandcardsscreen.png)
 
 ### Para Yatırma Ekranı
-![Transaction Screen](src/main/resources/org/example/atmsimulation/screenshots/transactionscreen.png)
+![Deposit Screen](src/main/resources/org/example/atmsimulation/screenshots/depositscreen.png)
 
 ### Transfer Ekranı
 ![Transaction Screen](src/main/resources/org/example/atmsimulation/screenshots/transactionscreen.png)
